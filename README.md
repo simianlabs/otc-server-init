@@ -1,15 +1,15 @@
 # otc-server-init
 
-Script to format attached volume, install docker and salt-minion on new Ubuntu OTC instances
+Script to format attached volume, install docker and salt-minion on new Ubuntu OTC instances  
 
 Use:
 
 ### UBUNTU
 
-./datadisk.sh SIZE
-./ubuntu-python.sh
-./ubuntu-docker.sh
-./ubuntu-saltminion.sh MASTER
+./datadisk.sh SIZE  
+./ubuntu-python.sh  
+./ubuntu-docker.sh  
+./ubuntu-saltminion.sh MASTER  
 
 ### CentOS
-./datadisk.sh SIZE
+./datadisk.sh SIZE  
