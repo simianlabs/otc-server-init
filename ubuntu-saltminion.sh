@@ -8,7 +8,7 @@ apt-get -y install salt-minion
 set -x
 sed -i -e "/hash_type:/c\hash_type: sha256" /etc/salt/minion
 echo "id: `hostname`" > /etc/salt/minion.d/minion.conf
-echo "master: SALTMASTER" >> /etc/salt/minion.d/minion.conf
+echo "master: $1" >> /etc/salt/minion.d/minion.conf
 echo "master_port: 4506" >> /etc/salt/minion.d/minion.conf
 echo "publish_port: 4505" >> /etc/salt/minion.d/minion.conf
 echo "environment: common" >> /etc/salt/minion.d/minion.conf
