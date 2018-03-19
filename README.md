@@ -4,4 +4,12 @@ Script to format attached volume, install docker and salt-minion on new Ubuntu O
 
 Use:
 
-./otc-server-init.sh SIZE SALTMASTER
+### UBUNTU
+
+./datadisk.sh SIZE
+./ubuntu-python.sh
+./ubuntu-docker.sh
+./ubuntu-saltminion.sh MASTER
+
+### CentOS
+./datadisk.sh SIZE
