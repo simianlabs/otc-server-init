@@ -1,7 +1,12 @@
 #!/bin/bash
 echo "*** Formating dist ****\n"
 
+if [ -d /dev/xvdb ]
 vgcreate DataGroup /dev/xvdb
+fi
+if [ -d /dev/vdb ]
+vgcreate DataGroup /dev/vdb
+fi
 echo "\n"
 lvcreate DataGroup -n VolOpt -L $1G
 echo "\n"
